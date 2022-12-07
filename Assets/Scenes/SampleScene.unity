@@ -478,6 +478,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1145352702}
+  - component: {fileID: 1145352703}
   m_Layer: 0
   m_Name: SceneController
   m_TagString: Untagged
@@ -500,6 +501,24 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1145352703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1145352701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdbf7ad0061b4d64bae692fc01d72fa8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalCard: {fileID: 2051861760}
+  images:
+  - {fileID: 21300000, guid: 9bc42856905326c4b9ba9d5b9427e6a3, type: 3}
+  - {fileID: 21300000, guid: 4ecf5c0c344da1349ba706f898886a6b, type: 3}
+  - {fileID: 21300000, guid: d68dff9999226e34287865d6078e29bb, type: 3}
+  - {fileID: 21300000, guid: ff249ce77def54d409d5db1ca4ff4735, type: 3}
 --- !u!1 &2051861756
 GameObject:
   m_ObjectHideFlags: 0
@@ -626,3 +645,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardBack: {fileID: 700700908}
+  controller: {fileID: 1145352703}
