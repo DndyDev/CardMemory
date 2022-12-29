@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
@@ -45,7 +46,6 @@ public class SceneController : MonoBehaviour
         {
             _score++;
             scoreLabel.text = "Score: " + _score;
-            Debug.Log(_score);
         }
         else
         {
@@ -103,5 +103,10 @@ public class SceneController : MonoBehaviour
         }
 
         return newArray;
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("MainScene");
     }
 }
